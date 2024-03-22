@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Champ</title>
+</head>
+<body>
+    <input type="Username" placeholder="Enter user name"> <br>
+    <input type="email" placeholder=" enter your email ID" id="mail">
+    <label style="color: red; display: none;" id="labelRed">Enter email Id without fail</label> <br>
+    <input type="password" id="passPass">
+    <input type="button" value="submit" id="but1" onclick="vayal()">
+
+    <script>
+       function vayal(){
+     let ekk =  document.getElementById("mail").value;
+   //  let mia= ekk.;
+if (ekk){
+    console.log("office");
+    document.getElementById("labelRed").style="display:none";
+}else
+{
+    console.log("home")
+    document.getElementById("labelRed").style="display:block; color:red";
+}
+       };
+
+    </script>
+    
+</body>
+</html>
